@@ -9,7 +9,7 @@ if !exists('g:tmp_file_uncrustify')
 endif
 
 " Specify path to your Uncrustify configuration file.
-if !exists('g:uncrustify_cfg_file_path ')
+if !exists('g:uncrustify_cfg_file_path')
     let g:uncrustify_cfg_file_path =
         \ shellescape(fnamemodify('~/.uncrustify.cfg', ':p'))
 endif
