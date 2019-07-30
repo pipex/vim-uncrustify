@@ -9,8 +9,10 @@ if !exists('g:tmp_file_uncrustify')
 endif
 
 " Specify path to your Uncrustify configuration file.
-let g:uncrustify_cfg_file_path =
-    \ shellescape(fnamemodify('~/.uncrustify.cfg', ':p'))
+if !exists('g:uncrustify_cfg_file_path ')
+    let g:uncrustify_cfg_file_path =
+        \ shellescape(fnamemodify('~/.uncrustify.cfg', ':p'))
+endif
 
 " http://stackoverflow.com/a/15513829/288089
 " Restore cursor position, window position, and last search after running a
